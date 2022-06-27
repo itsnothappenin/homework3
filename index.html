@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>TODO</title>
+    <link rel="stylesheet", href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Open+Sans:wght@300&family=Raleway:wght@600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="header">
+      <h1 style="color: white" >TODO</h1>
+      <button id = "modeButton" class="mode">
+        <img id = "modeIcon" src="icon-moon.svg">
+      </button>
+    </div>
+    <form class="form" id="form">
+      <input name=newTodo placeholder="Create a new todo...">
+    </form>
+    <div class ="container">
+      <ul class="list" id="list">
+
+      </ul>
+      <div id = 'buttonsDiv' class="bottom">
+        <small><span id="count">0</span> items left</small>
+        <button style="font-family: inherit"  id = "all">All</button>
+        <button style="font-family: inherit"  id = "active">Active</button>
+        <button style="font-family: inherit"  id = "completed">Completed</button>
+        <button style="font-family: inherit" id = "clearComplated">Clear Completed</button>
+
+      </div>
+    </div>
+    <script src="script.js">
+    </script>
+  </body>
+</html>

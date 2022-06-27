@@ -1,0 +1,166 @@
+
+:root {
+  --background-color: white;
+  --text-color: black;
+  --background-image: url(bg-desktop-light.jpg);
+}
+
+html [data-theme="dark"] {
+  --background-color: #181824;
+  --text-color: #c8cbd0;
+  --background-image: url(bg-desktop-dark.jpg);
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  background-image: url(bg-desktop-light.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  justify-content:space-between;;
+  margin: auto;
+  margin-top: 5%;
+  width: 30%;
+  align-items: center;
+  font-family: 'Josefin Sans'
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: #494C6B;
+  font-weight: bolder;
+  width: 30%;
+  margin: auto;
+  padding: 15px;
+  border: 5px;
+  list-style: none;
+  border-color: black;
+  border-radius: 5px;
+  box-shadow: rgba(194, 195, 214, 0.5);
+  font-family: 'Josefin Sans'
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.active {
+  text-decoration: none;
+}
+
+.container .bottom {
+  display: flex;
+  justify-content: space-between;
+  color: grey;
+  border-radius: 5px;
+  border:none;
+  align-items: flex-start;
+  font-family: 'Josefin Sans';
+  font-size: 14px;
+}
+
+ .bottom button {
+  border: none;
+  background-color: transparent;
+}
+
+.bottom button:hover {
+  color: grey;
+}
+
+
+.mode {
+  background-color: transparent;
+  border: none;
+  width: 25px;
+  height: 25px;
+}
+
+.mode:hover {
+  cursor: pointer;
+}
+
+.form {
+  font-family: 'Josefin Sans'
+}
+.form input {
+  display: flex;
+  padding: 15px;
+  background-color: white;
+  width: 30%;
+  margin: auto;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border:none;
+  font-family: 'Josefin Sans'
+}
+
+#buttonsDiv {
+  font-family: 'Josefin Sans';
+}
+
+#input {
+  width: 15px;
+  height: 15px;
+}
+
+#input:hover {
+  cursor: pointer;
+}
+
+#span:hover {
+  cursor: pointer;
+}
+
+#all:hover {
+  cursor: pointer;
+}
+#active:hover {
+  cursor: pointer;
+}
+#completed:hover {
+  cursor: pointer;
+}
+#clearComplated:hover {
+  cursor: pointer;
+}
+
+
+.list {
+  display: flex;
+  flex-direction: column;
+  border: 5px;
+  padding: 0;
+  list-style: none;
+  border-color: black;
+  border-radius: 5px;
+}
+
+.li {
+  display: flex;
+  width: auto;
+  border-bottom: 1px solid grey;
+  padding: 5px 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.input {
+
+}
+
+.footer {
+
+}
