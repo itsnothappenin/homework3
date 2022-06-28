@@ -39,7 +39,6 @@ function displayList (doings) {
                       <div class="input">
                         <input id= "input" type="checkbox">
                         <span id="span">${todo.title}</span>
-                        </input>
                       </div>
                     </li>`;
   }
@@ -65,6 +64,8 @@ list.addEventListener('click', function(event) {
 allButton.addEventListener('click', function(event) {
   displayList(doings);
   allButton.style.color = 'blue';
+  activeButton.style.color = 'black';
+  completedButton.style.color = 'black';
 });
 
 activeButton.addEventListener('click', function(event) {
@@ -73,6 +74,9 @@ activeButton.addEventListener('click', function(event) {
     element.parentElement.hidden = 'true';
   }
    activeButton.style.color = 'blue';
+   allButton.style.color = 'black';
+   completedButton.style.color = 'black';
+
   });
 
 //   document.querySelectorAll('.completed').forEach(function (completedElement) {
@@ -87,11 +91,14 @@ completedButton.addEventListener('click', function(event) {
     element.parentElement.hidden = 'true';
   }
   completedButton.style.color = 'blue';
+  activeButton.style.color = 'black'
+  allButton.style.color = 'black';
+
 });
 
 clearComplatedButton.addEventListener('click', function(event) {
   document.querySelectorAll('.completed').forEach(function (completedElement) {
-    completedElement.delete;
+    completedElement.parentElement.parentElement.remove();
   });
 });
 
