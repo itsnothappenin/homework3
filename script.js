@@ -38,7 +38,7 @@ function displayList (doings) {
     doingsHTML += `<li class="li">
                       <div class="input">
                         <input id= "input" type="checkbox">
-                        <span id="span">${todo.title}</span>
+                        <span class="active" id="span">${todo.title}</span>
                       </div>
                     </li>`;
   }
@@ -50,6 +50,7 @@ list.addEventListener('click', function(event) {
     const checkbox = event.target;
     const span = event.target.nextElementSibling;
     if (checkbox.checked) {
+      span.classList.remove ("active");
       span.classList.add ("completed");
       span.style.color ="grey";
     } else {
@@ -58,7 +59,6 @@ list.addEventListener('click', function(event) {
     }
   }
 });
-
 
 
 allButton.addEventListener('click', function(event) {
